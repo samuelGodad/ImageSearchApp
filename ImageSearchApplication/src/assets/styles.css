@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200;1,600;1,700&display=swap");
+
+body {
+  font-family: sans-serif;
+  background-color: magenta;
+
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 36px;
+  font: bold;
+  text-align: center;
+  margin: 40px 0 60px 0;
+}
+.card {
+  width: 90%;
+  max-width: 420px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: white;
+  border-radius: 20px;
+  margin: 100px auto 0;
+  padding: 40px 35px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  padding: 10px 25px;
+  color: #555;
+  height: 50px;
+  border-radius: 39px;
+  flex: 1;
+  margin-right: 5px;
+  font-size: 18px;
+  width: 300px;
+}
+.search button {
+  outline: 0;
+  border: 0;
+  background-color: #ebfffc;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  /* margin-left: 60px; */
+  /* margin-right: -10px; */
+}
+
+.search button img {
+  width: 20px;
+  align-items: center;
+}
+.search-results {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.search-result {
+  height: 100%;
+  width: 31%;
+  margin-bottom: 60px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: solid;
+}
+.search-result img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  /* border:solid; */
+  padding-bottom: 20px;
+}
+
+.search-results {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.search-result {
+  margin: 10px;
+  text-align: center;
+}
+
+.show-more {
+  background-color: mediumblue;
+  list-style: none;
+  height: 40px;
+  text-align: center;
+  margin-left: 50%;
+  margin-top: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 150px;
+  font-size: 20px;
+  margin-bottom: 40px;
+
+
+}
+a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .search-results {
+    padding: 20px;
+  }
+  .search-result {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 468px) {
+  .search-result {
+    width: 100%;
+  }
+}
